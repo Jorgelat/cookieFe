@@ -1,11 +1,7 @@
 import { Injectable } from "@angular/core";
-// import { readFile } from "fs/promises";
 import { Observable, of } from "rxjs";
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-// import * as data from '../db/db.json';
-// var json = require('../db/db.json');
-// declare var require: any;
-// const data = require('../db/db.json');
+
 
 export interface UValue {
   name: string;
