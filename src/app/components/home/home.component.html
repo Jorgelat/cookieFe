@@ -1,0 +1,21 @@
+
+<app-header></app-header>
+<div class="login-container container mt-5">    
+  <div class="col-12 row">       
+      <div class="d-flex justify-content-center text"> 
+        <p>Merge pull request: {{ points }}</p>
+      </div>
+      <div *ngIf="numAutoClickers != 0" class="d-flex justify-content-center text"> 
+        <p>Auto mergers: {{ numAutoClickers }}</p>
+      </div>
+      <div class="d-flex justify-content-center">  
+          <button mat-button  class="button"   color="primary"  type="button"  (click)="clickCookie()">
+            <img src="../../../assets/icons/sign-merge-left.svg"> MERGE</button>            
+      </div>   
+      <div class="d-flex justify-content-center">  
+        <button mat-button   class="button" [disabled]="!canBuyAutoClicker"  color="primary"  type="button"  (click)="buyAutoClicker()">
+          <i class="bi bi-cart-fill"></i> BUY AUTO MERGE ({{autoClickerCost}})</button>            
+      </div>    
+    </div>   
+</div>
+
